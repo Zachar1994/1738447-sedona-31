@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav>
-            <img src="https://via.placeholder.com/138*70" alt="">
+            <a href="index.html"><img src="https://via.placeholder.com/138*70" alt=""></a>
             <ul>
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Фото и видео</a></li>
@@ -19,37 +19,43 @@
         </nav>
     </header>
     <main>
-        <h1></h1>
+        <h1>Каталог отелей</h1>
         <section>
-            <form action="#">
-                <h2>Инфраструктура:</h2>
-                  <ul>
-                     <li><label><input type="checkbox" name="swimming" checked />Бассеин</label></li>
-                     <li><label><input type="checkbox" name="parking" checked />Парковка</label></li>
-                     <li><label><input type="checkbox" name="internet" checked />Wi-fi</label></li>
-                   </ul>
-                 <h2>Тип жилья:</h2>
-                   <ul>   
-                      <li><label><input type="checkbox" name="hostinitsa" checked />Гостиница</label></li>
-                      <li><label><input type="checkbox" name="hotel" checked />Отель</label></li>
-                      <li><label><input type="checkbox" name="apartment" checked />Апартаменты</label></li>
-                   </ul>
+            <form action="#" method="GET" name="infrustructure">
+                <div>
+                    <h2>Инфраструктура:</h2>
+                    <ul>
+                        <li><label><input type="checkbox" name="swimming" checked />Бассеин</label></li>
+                        <li><label><input type="checkbox" name="parking" checked />Парковка</label></li>
+                        <li><label><input type="checkbox" name="internet" checked />Wi-fi</label></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Тип жилья:</h2>
+                    <ul>
+                        <li><label><input type="checkbox" name="hostinitsa" checked />Гостиница</label></li>
+                        <li><label><input type="checkbox" name="hotel" checked />Отель</label></li>
+                        <li><label><input type="checkbox" name="apartment" checked />Апартаменты</label></li>
+                    </ul>
+                </div>
                 <div>
                     <h2>Стоимость в сутки:</h2>
+                    <input type="number" name="from">
+                    <input type="number" name="to">
                     <button type="submit">Показать</button>
                 </div>
-            </form>               
+            </form>
         </section>
         <section>
+            <h2>Найдено:3</h2>
             <div>
-                <h2>Найдено:3</h2>
                 <h3>Сортировка:</h3>
-            </div>
-            <div>
-                <ul>    
+                <ul>
                     <li><a href="#">По цене</a></li>
                     <li><a href="#">По типу</a></li>
                     <li><a href="#">По рейтингу</a></li>
+                </ul>
+                <ul>
                     <li><a href="#"><img src="https://via.placeholder.com/" alt="вверх"></a></li>
                     <li><a href="#"><img src="https://via.placeholder.com/" alt="вниз"></a></li>
                 </ul>
@@ -64,11 +70,12 @@
                         <a href="#">Забронировать</a>
                     </div>
                     <div>
-                        <Img src="stars" alt="">
-                        <Img src="stars" alt="">
-                        <Img src="stars" alt="">
-                        <Img src="stars" alt="">
-                        <Img src="stars" alt="">
+                        <div>
+                            <Img src="stars" alt="">
+                            <Img src="stars" alt="">
+                            <Img src="stars" alt="">
+                            <Img src="stars" alt="">
+                        </div>
                         <p>Рейтинг: 8,5</p>
                     </div>
                 </li>
@@ -81,11 +88,11 @@
                         <a href="#">Забронировать</a>
                     </div>
                     <div>
-                        <Img src="stars" alt="">
-                        <Img src="stars" alt="">
-                        <Img src="stars" alt="">
-                        <Img src="stars" alt="">
-                        <Img src="stars" alt="">
+                        <div>
+                            <Img src="stars" alt="">
+                            <Img src="stars" alt="">
+                            <Img src="stars" alt="">
+                        </div>
                         <p>Рейтинг: 8,7</p>
                     </div>
                 </li>
@@ -98,11 +105,10 @@
                         <a href="#">Забронировать</a>
                     </div>
                     <div>
-                        <Img src="stars" alt="">
-                        <Img src="stars" alt="">
-                        <Img src="stars" alt="">
-                        <Img src="stars" alt="">
-                        <Img src="stars" alt="">
+                        <div>
+                            <Img src="stars" alt="">
+                            <Img src="stars" alt="">
+                        </div>
                         <p>Рейтинг: 8,2</p>
                     </div>
                 </li>
@@ -111,18 +117,16 @@
     </main>
     <footer>
         <div>
-            <div>
-                <a href="#visitSEDONA">#visitSEDONA</a>
-                <a href="tel:+78005558628">+7 800 555-86-28</a>
-            </div>
-            <div>
-                <a href="#"><img src="https://via.placeholder.com/" alt=""></a>
-                <a href="#"><img src="https://via.placeholder.com/" alt=""></a>
-                <a href="#"><img src="https://via.placeholder.com/" alt=""></a>
-            </div>
-            <div>
-                <img src="https://via.placeholder.com/" alt="">
-            </div>
+            <a href="#visitSEDONA">#visitSEDONA</a>
+            <a href="tel:+78005558628">+7 800 555-86-28</a>
+        </div>
+        <div>
+            <a href="#"><img src="https://via.placeholder.com/" alt=""></a>
+            <a href="#"><img src="https://via.placeholder.com/" alt=""></a>
+            <a href="#"><img src="https://via.placeholder.com/" alt=""></a>
+        </div>
+        <div>
+            <img src="https://via.placeholder.com/" alt="">
         </div>
     </footer>
 </body>
