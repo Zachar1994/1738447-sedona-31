@@ -41,12 +41,12 @@ html {
     margin: 0 auto;
 }
 /*HEADER*/
-.header_navigation {
+.header-navigation {
     display: flex;
     justify-content: center;
     color: var(--main-color);
 }
-.header_navigation-list {
+.header-navigation-list {
     width: 1200px;
     display: flex;
     justify-content: space-around;
@@ -56,21 +56,21 @@ html {
     text-transform: uppercase;
     color: var(--main-color5);
 }
-.header_navigation-logo {
-    position: absolute;
-    /*margin-left: 30px;*/
-}
-.header_navigation-list-item3 {
+.header-navigation-list-item:nth-child(3) {
     margin-left: 300px;
 }
+.header-navigation-logo {
+    position: absolute;
+}
+
 /*Surface*/
-.header_surface {
+.header-surface {
     background-image: url("../img/surface-jpg.jpg");
     min-height: 509px;
     display: flex;
     justify-content: center;
 }
-.header_surface-img {
+.header-surface-img {
     margin-top: 70px;
 }
 /*section-promo*/
@@ -142,27 +142,22 @@ html {
     justify-content: space-around;
     min-height: 330px;
 }
-.section-description-list-item-accomodation {
+.section-description-list-item {
+    width: 290px;
+    margin-top: 64px;
+    text-align: center;
+}
+.item-accomodation {
     background: url("../img/icon-1.svg") no-repeat;
     background-position: top center;
-    width: 290px;
-    margin-top: 64px;
-    text-align: center;
-
 }
-.section-description-list-item-food {
+.item-food {
     background: url("../img/icon-2.svg") no-repeat;
-    background-position: top center;
-    width: 290px;
-    margin-top: 64px;
-    text-align: center;
+    background-position: top center; 
 }
-.section-description-list-item-souvenir {
+.item-souvenir {
     background: url("../img/icon-3.svg") no-repeat;
     background-position: top center;
-    width: 290px;
-    margin-top: 64px;
-    text-align: center;
 }
 .list-item-head {
     padding-top: 80px;
@@ -182,7 +177,7 @@ html {
 
 
 
-.section-description-list-second {
+.section-description-list-advantage {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -190,14 +185,14 @@ html {
     background: var(--main-color3);
     margin-top: -5px;
 }
-.section-list-item-second {
+.section-list-item-advantage {
     display: flex;
     flex-direction: column;
     width: 254px;
     margin-top: 47px;
     text-align: center;
 }
-.item-second-head {
+.item-advantage-head {
     width: 100px;
     margin-left: 75px;
     font-size: 21px;
@@ -206,13 +201,13 @@ html {
     text-transform: uppercase;
     color: var(--main-color5);
 }
-.item-second-number {
+.item-advantage-number {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
     color: var(--main-color5);
 }
-.item-second-text {
+.item-advantage-text {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
@@ -287,7 +282,11 @@ html {
     width: 46px;
     height: 48px;
     display: flex;
+    justify-content: center;
     background: var(--main-color2);
+}
+.block-item-img {
+    margin-top: 14px;
 }
 .footer-block-networks-item:hover {
     background: #669EC0;
@@ -297,17 +296,7 @@ html {
     flex-direction: row;
     gap: 6px;
 }
-.block-item-img-twitter {
-    margin: 16px;
-}
-.block-item-img-facebook {
-    margin-left: 16px;
-    margin-top: 13px;
-}
-.block-item-img-youtube {
-     margin-left: 13px;
-     margin-top: 16px;
-}
+
 .footer-block-logo {
     display: flex;
     flex-direction: row;
