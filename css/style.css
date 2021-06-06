@@ -175,8 +175,6 @@ html {
     color: var(--main-color5);
 }
 
-
-
 .section-description-list-advantage {
     display: flex;
     flex-direction: row;
@@ -289,7 +287,7 @@ html {
     margin-top: 14px;
 }
 .footer-block-networks-item:hover {
-    background: #669EC0;
+    background: var(--main-color2);
 }
 .footer-block-networks-list {
     display: flex;
@@ -310,6 +308,115 @@ html {
     text-transform: uppercase;
     color: var(--main-color5);
 }
+
+/*CATALOG PAGE*/
+.infrustructure-form {
+    background: url("../img/background-catalog.png") no-repeat;
+    height: 215px;
+    display: flex;
+    flex-direction: row;
+}
+.block-living-advantages {
+    margin-left: 100px;
+}
+.block-living-conditions {
+   margin-left: 100px;
+}
+.block-living-price {
+    display: flex;
+    flex-direction: column;
+    margin-left: 360px;
+}
+.price-button {
+    margin-top: 40px;
+    margin-left: 85px;
+    width: 138px;
+    height: 36px;
+    background: transparent;
+    border: 2px solid var(--main-color1);
+    font-size: 14px;
+    line-height: 21px;
+    color:#FFFFFF;
+}
+.form-head {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    color: var(--main-color1);
+}
+.form-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-left: unset;
+}
+.form-list-item {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: var(--main-color1);
+}
+/*range-of-hotels*/
+.range-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid var(--main-color);
+}
+.range-menu-head {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-left: 70px;
+}
+.range-menu-sort {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-left: 46px;
+}
+.range-menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+.range-menu-list-item {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color:var(--main-color2);
+}
+.range-menu-list-scroll {
+    margin-left: 503px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.range-menu-hotels-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.hotels-item-information {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+.item-informaton-head {
+    margin-top: unset;
+    font-size: 21px;
+     line-height: 26px;
+}
+.hotel-description {
+     margin-left: 29px;
+     margin-top: unset;
+}
+.hotel-img {
+    margin-top: 30px;
+}
+
 
 
 
