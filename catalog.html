@@ -4,73 +4,76 @@
 <head>
     <meta charset="utf-8">
     <link rel="icon" href="32.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="index.html"><img src="img/logo.svg" width="138" height="70"  alt="логотип-хедер"></a>
-            <ul>
-                <li><a href="#">Информация</a></li>
-                <li><a href="#">Фото и видео</a></li>
-                <li><a href="#">Карта штата</a></li>
-                <li><a href="hotels.html">Гостиницы</a></li>
+  <div class="container">
+    <header class="header">
+        <nav class="header-navigation">
+            <img src="img/logo.svg" width="138" height="70" alt="логотип-хедер" class="header-navigation-logo">
+            <ul class="header-navigation-list">
+                <li class="header-navigation-list-item"><a href="#">Информация</a></li>
+                <li class="header-navigation-list-item"><a href="#">Фото и видео</a></li>
+                <li class="header-navigation-list-item"><a href="#">Карта штата</a></li>
+                <li class="header-navigation-list-item"><a href="catalog.html">Гостиницы</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Каталог отелей</h1>
         <section>
-            <form action="#" method="GET" name="infrustructure">
-                <div>
-                    <h2>Инфраструктура:</h2>
-                    <ul>
-                        <li><label><input type="checkbox" name="swimming" checked />Бассеин</label></li>
-                        <li><label><input type="checkbox" name="parking" checked />Парковка</label></li>
-                        <li><label><input type="checkbox" name="internet" checked />Wi-fi</label></li>
+            <form action="#" method="GET" name="infrustructure" class="infrustructure-form">
+                <div class="block-living-advantages">
+                    <h2 class="form-head">Инфраструктура:</h2>
+                    <ul class="form-list">
+                        <li><label class="form-list-item"><input type="checkbox" name="swimming" checked />Бассеин</label></li>
+                        <li><label class="form-list-item"><input type="checkbox" name="parking" checked />Парковка</label></li>
+                        <li><label class="form-list-item"><input type="checkbox" name="internet" checked />Wi-fi</label></li>
                     </ul>
                 </div>
-                <div>
-                    <h2>Тип жилья:</h2>
-                    <ul>
-                        <li><label><input type="checkbox" name="hostinitsa" checked />Гостиница</label></li>
-                        <li><label><input type="checkbox" name="hotel" checked />Отель</label></li>
-                        <li><label><input type="checkbox" name="apartment" checked />Апартаменты</label></li>
+                <div class="block-living-conditions">
+                    <h2 class="form-head">Тип жилья:</h2>
+                    <ul class="form-list">
+                        <li><label class="form-list-item"><input type="checkbox" name="hostinitsa" checked />Гостиница</label></li>
+                        <li><label class="form-list-item"><input type="checkbox" name="hotel" checked />Отель</label></li>
+                        <li><label class="form-list-item"><input type="checkbox" name="apartment" checked />Апартаменты</label></li>
                     </ul>
                 </div>
-                <div>
-                    <h2>Стоимость в сутки:</h2>
-                     <label><input type="number"  value="" name="from">от</label>   
-                     <label><input type="number" value="" name="to">до</label>  
-                     <button type="submit">Показать</button>
+                <div class="block-living-price">
+                    <h2 class="form-head">Стоимость в сутки:</h2>
+                     <label><input type="number"  value="" name="from">от <input type="number" value="" name="to">до  </label>   
+                     <button type="submit" class="price-button">Показать</button>
                 </div>
             </form>
         </section>
-        <section>
-            <h2>Найдено:3</h2>
-            <div>
-                <h3>Сортировка:</h3>
-                <ul>
-                    <li><a href="#">По цене</a></li>
-                    <li><a href="#">По типу</a></li>
-                    <li><a href="#">По рейтингу</a></li>
+        <section class="range-of-hotels">
+            <div class="range-menu">
+                <h2 class="range-menu-head">Найдено:3</h2>
+                <h3 class="range-menu-sort">Сортировка:</h3>
+                <ul class="range-menu-list">
+                    <li><a href="#" class="range-menu-list-item">По цене</a></li>
+                    <li><a href="#" class="range-menu-list-item" >По типу</a></li>
+                    <li><a href="#" class="range-menu-list-item">По рейтингу</a></li>
                 </ul>
-                <ul>
+                <ul class="range-menu-list-scroll">
                     <li><a href="#"><img src="img/up.png" width="11" height="10" alt="вверх"></a></li>
                     <li><a href="#"><img src="img/down.png" width="11" height="10" alt="вниз"></a></li>
                 </ul>
             </div>
-            <ul>
-                <li>
-                    <div>
-                        <img src="img/hotel-1.jpg" width="135" height="90" alt="hotel1">
-                        <h2><a href="#">Amara Resort & Spa</a></h2>
-                        <p>Гостиница от 4000р</p>
-                        <a href="#">Подробнее</a>
-                        <a href="#">Забронировать</a>
+            <ul class="range-menu-hotels">
+                <li class="range-menu-hotels-item">
+                    <div class="hotels-item-information">
+                        <img src="img/hotel-1.jpg" width="135" height="90" alt="hotel1" class="hotel-img">
+                           <div class="hotel-description">
+                              <h2 ><a href="#" class="item-information-head">Amara Resort & Spa</a></h2>
+                              <p>Гостиница от 4000р</p>
+                              <a href="#">Подробнее</a>
+                              <a href="#">Забронировать</a>
+                           </div>        
                     </div>
-                    <div>
+                    <div class="hotels-item-range">
                         <div>
                             <Img src="img/star.png" width="18" height="17" alt="star">
                             <Img src="img/star.png" width="18" height="17" alt="star">
@@ -80,15 +83,17 @@
                         <p>Рейтинг: 8,5</p>
                     </div>
                 </li>
-                <li>
-                    <div>
-                        <img src="img/hotel-2.jpg" width="135" height="90" alt="hotel2">
-                        <h2><a href="#">Desert Quail Inn</a></h2>
-                        <p>Мотель от 3000р</p>
-                        <a href="#">Подробнее</a>
-                        <a href="#">Забронировать</a>
+                <li class="range-menu-hotels-item">
+                    <div class="hotels-item-information">
+                           <img src="img/hotel-2.jpg" width="135" height="90" alt="hotel2" class="hotel-img">
+                            <div class="hotel-description">
+                               <h2><a href="#">Desert Quail Inn</a></h2>
+                                <p>Мотель от 3000р</p>  
+                                <a href="#">Подробнее</a>
+                                <a href="#">Забронировать</a>
+                           </div>                
                     </div>
-                    <div>
+                    <div class="hotels-item-range">
                         <div>
                             <Img src="img/star.png" width="18" height="17" alt="star">
                             <Img src="img/star.png" width="18" height="17" alt="star">
@@ -97,15 +102,17 @@
                         <p>Рейтинг: 8,7</p>
                     </div>
                 </li>
-                <li>
-                    <div>
+                <li class="range-menu-hotels-item" >
+                    <div class="hotels-item-information">
                         <img src="img/hotel-3.jpg" width="135" height="90" alt="hotel3">
-                        <h2><a href="#">Villas at Poco Diablo</a></h2>
-                        <p>Апартаменты от 2000р</p>
-                        <a href="#">Подробнее</a>
-                        <a href="#">Забронировать</a>
+                            <div class="hotel-description">
+                               <h2><a href="#">Villas at Poco Diablo</a></h2>
+                               <p>Апартаменты от 2000р</p>
+                               <a href="#">Подробнее</a>
+                               <a href="#">Забронировать</a>
+                            </div>          
                     </div>
-                    <div>
+                    <div class="hotels-item-range">
                         <div>
                             <Img src="img/star.png" width="18" height="17" alt="star">
                             <Img src="img/star.png" width="18" height="17" alt="star">
@@ -117,19 +124,28 @@
         </section>
     </main>
     <footer>
-        <div>
-            <a href="#visitSEDONA">#visitSEDONA</a>
-            <a href="tel:+78005558628">+7 800 555-86-28</a>
-        </div>
-        <div>
-            <a href="#"><img src="img/twitter.png" width="16" height="15" alt="twitter"></a>
-            <a href="#"><img src="img/facebook.png" width="12" height="22" alt="facebook"></a>
-            <a href="#"><img src="img/youtube.png" width="20" height="16" alt="youtube"></a>
-        </div>
-        <div>
-            <img src="img/logo_htmlacademy.svg" width="115" height="33" alt="logo-footer">
+        <div class="footer-content">
+            <div class="footer-block-number">
+                <a href="#visitSEDONA">#visitSEDONA</a>
+                <a href="tel:+78005558628">+7 800 555-86-28</a>
+            </div>
+            <div class="footer-block-networks">
+                <ul class="footer-block-networks-list">
+                    <li><a href="#" class="footer-block-networks-item"><img src="img/twitter.png" width="17" height="15" alt="twitter"
+                                class="block-item-img"></a></li>
+                    <li><a href="#" class="footer-block-networks-item"><img src="img/facebook.png" width="12"
+                                height="22" alt="facebook" class="block-item-img"></a></li>
+                    <li><a href="#" class="footer-block-networks-item"><img src="img/youtube.png" width="20"
+                                height="16" alt="youtube" class="block-item-img"></a></li>
+                </ul>
+            </div>
+            <div class="footer-block-logo">
+                <p class="footer-block-logo-text">website by</p>
+                <img src="img/logo_htmlacademy.svg" width="115" height="33" alt="logo-footer">
+            </div>
         </div>
     </footer>
+  </div>
 </body>
 
 </html>
