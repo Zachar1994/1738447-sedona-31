@@ -374,6 +374,7 @@ html {
     line-height: 18px;
     font-weight: 400;
     margin-left: 46px;
+    text-transform: uppercase;
 }
 .range-menu-list {
     display: flex;
@@ -385,9 +386,11 @@ html {
     line-height: 18px;
     font-weight: 400;
     color:var(--main-color2);
+    text-transform: uppercase;
+    gap: 40px;
 }
 .range-menu-list-scroll {
-    margin-left: 503px;
+    margin-left: 510px;
     display: flex;
     flex-direction: row;
     gap: 12px;
@@ -396,25 +399,83 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     padding-bottom: 30px;
+    margin-left: unset;
+    border-bottom: 1px solid #E5E5E5;
 }
 .hotels-item-information {
     display: flex;
     flex-direction: row;
     align-items: center; 
 }
+.range-menu-hotels {
+    padding-left: unset;
+}
+.hotels-item-range {
+    padding-left: 561px;
+    display: flex;
+    align-items:flex-end;
+    
+    flex-direction: column;
+    gap: 47px;
+    margin-top: 29px;
+}
 .item-informaton-head {
     margin-top: unset;
     font-size: 21px;
-     line-height: 26px;
+    line-height: 26px;
 }
 .hotel-description {
      margin-left: 29px;
      margin-top: unset;
 }
+.learn-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 27px;
+    background: var(--main-color2);
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--main-color1);
+    text-transform: uppercase;   
+}
+.book {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 142px;
+    height: 27px;
+    background: var(--main-color4);
+    color: var(--main-color1);
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;   
+}
+.hotel-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+.hotel-price {
+    margin-top: unset;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
 .hotel-img {
     margin-top: 30px;
+    margin-left: 73px;
+}
+.item-range {
+    width: 110px;
+    height: 27px;
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
