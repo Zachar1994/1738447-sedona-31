@@ -369,12 +369,18 @@ html {
     margin-left: 46px;
     text-transform: uppercase;
 }
+.menu-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .range-menu-list {
     display: flex;
     flex-direction: row;
     gap: 32px;
 }
 .range-menu-list-item {
+    max-width: 100%;
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
@@ -383,14 +389,16 @@ html {
     gap: 40px;
 }
 .range-menu-list-scroll {
-    margin-left: 510px;
+    margin-left: auto;
     display: flex;
     flex-direction: row;
     gap: 12px;
 }
 .range-menu-hotels-item {
+    max-width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 30px;
     margin-left: unset;
@@ -405,7 +413,7 @@ html {
     padding-left: unset;
 }
 .hotels-item-range {
-    padding-left: 561px;
+    /*padding-left: 561px;*/
     display: flex;
     align-items:flex-end;
     
