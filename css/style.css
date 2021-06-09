@@ -76,15 +76,14 @@ html {
 /*section-promo*/
 .section-promo {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;   
     text-align: center;
     min-height: 216px;
 }
 .section_promo-head {
     margin-top: 41px;
-    margin-left: 356px;
-    width: 470px;
+    text-align: center;
     min-height: 80px;
     font-size: 21px;
     line-height: 26px;
@@ -93,8 +92,6 @@ html {
     color: var(--main-color5);
 }
 .section_promo-text {
-    margin-left: 340px;
-    width: 519px;
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
@@ -110,6 +107,8 @@ html {
 .section-description-block-text {
     width: 400px;
     height: 256px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     background: var(--main-color2);
 }
@@ -118,8 +117,6 @@ html {
     line-height: 21px;
     font-weight: 700;
     color: var(--main-color1);
-    width: 122px;
-    margin-left: 139px;
     margin-top: 47px;
 }
 .block-number {
@@ -133,8 +130,6 @@ html {
     line-height: 21px;
     font-weight: 400;
     color: var(--main-color1);
-    width: 302px;
-    margin-left: 49px;
 }
 .section-description-list {
     display: flex;
@@ -232,8 +227,6 @@ html {
     line-height: 24px;
     font-weight: 400;
     text-transform: uppercase;
-    width: 435px;
-    margin-left: 383px;
     color: var(--main-color5);
 }
 .section_form-button {
