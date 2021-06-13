@@ -100,7 +100,7 @@ html {
 }
 /*section_description*/
 .section-description-block {
-    display:flex;
+    display: flex;
     flex-direction: row;
     margin-top: 50px;
 }
@@ -132,9 +132,8 @@ html {
     color: var(--main-color1);
 }
 .section-description-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     min-height: 330px;
 }
 .section-description-list-item {
@@ -171,9 +170,9 @@ html {
 }
 
 .section-description-list-advantage {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 60px;
     min-height: 330px;
     background: var(--main-color3);
     margin-top: -5px;
@@ -210,8 +209,8 @@ html {
 
 /*section_form*/
 .section_form {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     text-align: center;
 }
 .section_form-head {
@@ -283,8 +282,8 @@ html {
     background: var(--main-color2);
 }
 .footer-block-networks-list {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 6px;
 }
 
@@ -318,11 +317,12 @@ html {
 .block-living-price {
     display: flex;
     flex-direction: column;
-    margin-left: 360px;
+    margin-left: auto;
+    padding-right: 73px;
 }
 .price-button {
     margin-top: 40px;
-    margin-left: 85px;
+    margin-left: 55px;
     width: 138px;
     height: 36px;
     background: transparent;
@@ -335,6 +335,7 @@ html {
     font-size: 16px;
     line-height: 21px;
     font-weight: 700;
+    text-transform: uppercase;
     color: var(--main-color1);
 }
 .form-list {
@@ -343,12 +344,100 @@ html {
     gap: 25px;
     padding-left: unset;
 }
-.form-list-item {
+
+
+/*Checkbox*/
+.label-text {
+    margin-left: 15px;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
+    text-transform: uppercase;
     color: var(--main-color1);
 }
+.form-list-item {
+	display: block;
+	margin: 0 0 10px 0;
+	cursor: pointer;
+	user-select: none;
+	position: relative;
+}
+.form-list-item input[type=checkbox] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+.form-list-item span {
+	display: inline-block;
+	position: relative; 
+	padding: 0 0 0 35px; 
+	line-height: 22px;    
+}
+.form-list-item span:before {
+	content: "";
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: background 0.3s ease;
+	background: url(../img/box-before.svg) 0 0 no-repeat;
+}
+ 
+/* Checked */
+.form-list-item input[type=checkbox]:checked + span:before {
+	background-image: url(../img/checkbox-on.svg);
+    width: 27px;
+}
+ 
+/* Focus */
+.focused span:before {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+ 
+/* Hover */
+.form-list-item span:hover:before {
+	filter: brightness(110%);
+}
+ 
+/* Active */
+.form-list-item span:active:before {
+	filter: brightness(80%);
+}
+ 
+/* Disabled */
+.form-list-item input[type=checkbox]:disabled + span {
+	color: #666;
+	cursor: default;
+}
+.form-list-item input[type=checkbox]:disabled + span:before {
+	filter: grayscale(100%);
+	opacity: 0.6;
+}
+/*iputs-form*/
+.block-living-price-inputs {
+    display: flex;
+    flex-direction: row;
+}
+.input-price {
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    width: 110px;
+    height: 36px;
+}
+::placeholder {
+    font-family: 'PTSans';
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding-left: 28px;
+}
+
 /*range-of-hotels*/
 .range-menu {
     display: flex;
@@ -388,11 +477,16 @@ html {
     text-transform: uppercase;
     gap: 40px;
 }
+.range-menu-list-item:hover {
+    color: var(--main-color4);
+    border-bottom: 1px solid var(--main-color2);
+}
 .range-menu-list-scroll {
     margin-left: auto;
     display: flex;
     flex-direction: row;
     gap: 12px;
+    padding-right: 40px;
 }
 .range-menu-hotels-item {
     max-width: 100%;
@@ -401,6 +495,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 30px;
+    padding-right: 40px;
     margin-left: unset;
     border-bottom: 1px solid #E5E5E5;
 }
