@@ -28,29 +28,55 @@
                     <div class="block-living-advantages">
                         <h2 class="form-head">Инфраструктура:</h2>
                         <ul class="form-list">
-                            <li><label class="form-list-item"><input type="checkbox" name="swimming"
-                                        checked />Бассеин</label></li>
-                            <li><label class="form-list-item"><input type="checkbox" name="parking"
-                                        checked />Парковка</label></li>
-                            <li><label class="form-list-item"><input type="checkbox" name="internet"
-                                        checked />Wi-fi</label></li>
+                            <li>
+                                <label class="form-list-item">
+                                    <input type="checkbox" class="checked-header" name="swimming"checked />
+                                    <span class="label-text">Бассеин</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="form-list-item">
+                                    <input type="checkbox" class="checked-header" name="parking"checked />
+                                    <span class="label-text">Парковка</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="form-list-item">
+                                    <input type="checkbox" class="checked-header" name="internet"checked />
+                                    <span class="label-text">Wi-fi</span>
+                                </label>
+                            </li>
                         </ul>
                     </div>
                     <div class="block-living-conditions">
                         <h2 class="form-head">Тип жилья:</h2>
                         <ul class="form-list">
-                            <li><label class="form-list-item"><input type="checkbox" name="hostinitsa"
-                                        checked />Гостиница</label></li>
-                            <li><label class="form-list-item"><input type="checkbox" name="hotel"
-                                        checked />Отель</label></li>
-                            <li><label class="form-list-item"><input type="checkbox" name="apartment"
-                                        checked />Апартаменты</label></li>
+                            <li>
+                                <label class="form-list-item">
+                                    <input type="checkbox" class="checked-header" name="hostinitsa"checked />
+                                     <span class="label-text">Гостиница</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="form-list-item">
+                                    <input type="checkbox" class="checked-header" name="hotel"checked />
+                                    <span class="label-text">Отель</span> 
+                                </label>
+                            </li>
+                            <li>
+                                <label class="form-list-item">
+                                    <input type="checkbox" class="checked-header" name="apartment"checked/>
+                                    <span class="label-text">Апартаменты</span>
+                                </label>
+                            </li>
                         </ul>
                     </div>
                     <div class="block-living-price">
                         <h2 class="form-head">Стоимость в сутки:</h2>
-                        <label><input type="number" value="" name="from">от </label>
-                        <label><input type="number" value="" name="to">до </label>
+                           <div class="block-living-price-inputs">
+                               <label><input type="number" value="" name="from" class="input-price" placeholder="От 0"></label>
+                               <label><input type="number" value="" name="to" class="input-price" placeholder="до 3000"></label>
+                           </div>        
                         <button type="submit" class="price-button">Показать</button>
                     </div>
                 </form>
