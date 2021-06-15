@@ -39,11 +39,13 @@ html {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.22);
 }
 /*HEADER*/
 .header-navigation {
     display: flex;
     justify-content: center;
+    position: relative;
     color: var(--main-color);
 }
 .header-navigation-list {
@@ -61,6 +63,8 @@ html {
 }
 .header-navigation-logo {
     position: absolute;
+    left: 531px;
+    right: 531px;
 }
 
 /*Surface*/
@@ -81,7 +85,7 @@ html {
     text-align: center;
     min-height: 216px;
 }
-.section_promo-head {
+.section-promo-head {
     margin-top: 41px;
     text-align: center;
     min-height: 80px;
@@ -91,7 +95,7 @@ html {
     text-transform: uppercase;
     color: var(--main-color5);
 }
-.section_promo-text {
+.section-promo-text {
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
@@ -111,6 +115,11 @@ html {
     flex-direction: column;
     text-align: center;
     background: var(--main-color2);
+}
+.section-img {
+    width: 100%;
+    max-width: 800px;
+    height: 256px;
 }
 .block-head {
     font-size: 21px;
@@ -208,12 +217,12 @@ html {
 }
 
 /*section_form*/
-.section_form {
+.section-form {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     text-align: center;
 }
-.section_form-head {
+.section-form-head {
     margin-top: 58px;
     font-size: 30px;
     line-height: 24px;
@@ -221,14 +230,14 @@ html {
     text-transform: uppercase;
     color: var(--main-color5);
 }
-.section_form-text {
+.section-form-text {
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
     text-transform: uppercase;
     color: var(--main-color5);
 }
-.section_form-button {
+.section-form-button {
     display: flex;
     width: 586px;
     height: 86px;
@@ -339,8 +348,8 @@ html {
     color: var(--main-color1);
 }
 .form-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 25px;
     padding-left: unset;
 }
@@ -506,6 +515,8 @@ html {
 }
 .range-menu-hotels {
     padding-left: unset;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 .hotels-item-range {
     /*padding-left: 561px;*/
