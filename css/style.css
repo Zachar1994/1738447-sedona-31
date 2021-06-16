@@ -63,19 +63,18 @@ html {
 }
 .header-navigation-logo {
     position: absolute;
-    left: 531px;
-    right: 531px;
 }
 
 /*Surface*/
 .header-surface {
-    background-image: url("../img/surface-jpg.jpg");
-    min-height: 509px;
+    background-image: url('../img/shape-header.svg') no-repeat bottom;
+    background: url("../img/surface-jpg.jpg") no-repeat;  
+    height: 509px;
     display: flex;
     justify-content: center;
 }
 .header-surface-img {
-    margin-top: 70px;
+    margin-top: 77px;
 }
 /*section-promo*/
 .section-promo {
@@ -96,6 +95,7 @@ html {
     color: var(--main-color5);
 }
 .section-promo-text {
+    margin-top: 16px;
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
@@ -141,6 +141,7 @@ html {
     color: var(--main-color1);
 }
 .section-description-list {
+    padding-left: 73px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     min-height: 330px;
@@ -264,7 +265,8 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     background: rgba(255, 255, 255, 0.9);
 }
 .footer-block-number {
@@ -318,7 +320,7 @@ html {
     flex-direction: row;
 }
 .block-living-advantages {
-    margin-left: 100px;
+    margin-left: 85px;  
 }
 .block-living-conditions {
    margin-left: 100px;
@@ -341,6 +343,7 @@ html {
     color:#FFFFFF;
 }
 .form-head {
+    margin-left: 15px;
     font-size: 16px;
     line-height: 21px;
     font-weight: 700;
@@ -348,9 +351,10 @@ html {
     color: var(--main-color1);
 }
 .form-list {
+    margin-top: 24px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 25px;
+    grid-template-rows: 1fr 1fr 1fr;  
+    gap: 22px;
     padding-left: unset;
 }
 
@@ -458,7 +462,7 @@ html {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
-    margin-left: 70px;
+    margin-left: 95px;
 }
 .range-menu-sort {
     font-size: 12px;
@@ -495,7 +499,7 @@ html {
     display: flex;
     flex-direction: row;
     gap: 12px;
-    padding-right: 40px;
+    padding-right: 50px;
 }
 .range-menu-hotels-item {
     max-width: 100%;
@@ -504,7 +508,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 30px;
-    padding-right: 40px;
+    padding-right: 50px;
     margin-left: unset;
     border-bottom: 1px solid #E5E5E5;
 }
@@ -519,10 +523,8 @@ html {
     grid-template-rows: 1fr 1fr 1fr;
 }
 .hotels-item-range {
-    /*padding-left: 561px;*/
     display: flex;
-    align-items:flex-end;
-    
+    align-items:flex-end;  
     flex-direction: column;
     gap: 47px;
     margin-top: 29px;
@@ -574,7 +576,7 @@ html {
 }
 .hotel-img {
     margin-top: 30px;
-    margin-left: 73px;
+    margin-left: 90px;
 }
 .item-range {
     width: 110px;
