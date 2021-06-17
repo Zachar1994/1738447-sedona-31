@@ -67,11 +67,18 @@ html {
 
 /*Surface*/
 .header-surface {
-    background-image: url('../img/shape-header.svg') no-repeat bottom;
-    background: url("../img/surface-jpg.jpg") no-repeat;  
+    background: url("../img/surface-jpg.jpg") no-repeat;
     height: 509px;
     display: flex;
     justify-content: center;
+
+}
+.header-surface::before {
+    content: url("../img/shape-header.svg");
+    max-width: 1200px;
+    display: flex;
+    position: absolute;
+    top: 506px;
 }
 .header-surface-img {
     margin-top: 77px;
@@ -113,6 +120,7 @@ html {
     height: 256px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     background: var(--main-color2);
 }
@@ -127,18 +135,22 @@ html {
     font-weight: 700;
     color: var(--main-color1);
     margin-top: 47px;
+    text-transform: uppercase;
 }
 .block-number {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
     color: var(--main-color1);
+    text-transform: uppercase;
 }
 .block-text {
+    max-width: 302px;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
     color: var(--main-color1);
+    text-transform: uppercase;
 }
 .section-description-list {
     padding-left: 73px;
@@ -154,14 +166,17 @@ html {
 .item-accomodation {
     background: url("../img/icon-1.svg") no-repeat;
     background-position: top center;
+    max-width: 254px;
 }
 .item-food {
     background: url("../img/icon-2.svg") no-repeat;
     background-position: top center; 
+    max-width: 297px;
 }
 .item-souvenir {
     background: url("../img/icon-3.svg") no-repeat;
     background-position: top center;
+    max-width: 269px;
 }
 .list-item-head {
     padding-top: 80px;
@@ -193,10 +208,19 @@ html {
     width: 254px;
     margin-top: 47px;
     text-align: center;
+    align-items: center;
+}
+.number-three {
+    max-width: 207px;
+}
+.number-four {
+    max-width: 258px;
+}
+.number-five {
+    max-width: 246px;
 }
 .item-advantage-head {
     width: 100px;
-    margin-left: 75px;
     font-size: 21px;
     line-height: 21px;
     font-weight: 700;
@@ -219,9 +243,11 @@ html {
 
 /*section_form*/
 .section-form {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 .section-form-head {
     margin-top: 58px;
@@ -232,6 +258,7 @@ html {
     color: var(--main-color5);
 }
 .section-form-text {
+    max-width: 435px;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
@@ -243,7 +270,6 @@ html {
     width: 586px;
     height: 86px;
     margin-top: 24px;
-    margin-left: 316px;
     background: var(--main-color4);
     color: var(--main-color1) ;
     font-size: 21px;
@@ -290,7 +316,10 @@ html {
     margin-top: 14px;
 }
 .footer-block-networks-item:hover {
-    background: var(--main-color2);
+    background: #669EC0;
+}
+.footer-block-networks-item:active {
+    background: #5496BD;
 }
 .footer-block-networks-list {
     display: grid;
