@@ -63,6 +63,7 @@ html {
 }
 .header-navigation-logo {
     position: absolute;
+    z-index: 1;
 }
 
 /*Surface*/
@@ -70,23 +71,42 @@ html {
     background: url("../img/surface-jpg.jpg") no-repeat;
     height: 509px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    position: relative;
+}
 
-}
 .header-surface::before {
-    content: url("../img/shape-header.svg");
-    max-width: 1200px;
-    display: flex;
+    content: "";
     position: absolute;
-    top: 506px;
+    width: 100%;
+    height: 57px;
+    background: url('../img/shape-header.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    bottom: 0;
 }
-.header-surface-img {
-    margin-top: 77px;
-}
+/*.header-shape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    height: 57px;
+    position: absolute;
+    top: 507px;
+    background-image: url('../img/shape-header.svg');
+    
+    
+}*/
+
+
 /*section-promo*/
 .section-promo {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;   
     text-align: center;
     min-height: 216px;
@@ -100,6 +120,7 @@ html {
     font-weight: 700;
     text-transform: uppercase;
     color: var(--main-color5);
+    max-width: 460px;
 }
 .section-promo-text {
     margin-top: 16px;
@@ -464,21 +485,43 @@ html {
 .block-living-price-inputs {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 224px;
+    height:36px;
+    border: 2px solid white;
+    border-radius: 2px;
 }
 .input-price {
     background: transparent;
-    border: 2px solid #FFFFFF;
-    width: 110px;
-    height: 36px;
+    max-width: 55px;
+    border: unset;
+    color:rgba(255, 255, 255, 0.9);
 }
-::placeholder {
-    font-family: 'PTSans';
+.input-price-from {
+    width: 25px;
+    background: transparent;
+    border: unset;
+    color: white;
+}
+.label-form {
+    width: 58px;
+    padding-left: 20px;
     font-size: 14px;
     line-height: 21px;
     color: #FFFFFF;
     text-transform: uppercase;
-    padding-left: 28px;
 }
+.label-form-to {
+    width: 84px;
+    padding-left: 11px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+
 
 /*range-of-hotels*/
 .range-menu {
