@@ -149,6 +149,7 @@ html {
     width: 100%;
     max-width: 800px;
     height: 256px;
+    display: block;
 }
 .block-head {
     font-size: 21px;
@@ -221,7 +222,7 @@ html {
     padding-left: 60px;
     min-height: 330px;
     background: var(--main-color3);
-    margin-top: -5px;
+    margin-top: 0;
 }
 .section-list-item-advantage {
     display: flex;
@@ -231,13 +232,13 @@ html {
     text-align: center;
     align-items: center;
 }
-.number-three {
+.little-area {
     max-width: 207px;
 }
-.number-four {
+.beautiful-road {
     max-width: 258px;
 }
-.number-five {
+.little-tourist {
     max-width: 246px;
 }
 .item-advantage-head {
@@ -300,6 +301,12 @@ html {
     padding-left: 125px;
     text-align: center;
 }
+.section-form-button:hover {
+    background: #604E43;
+}
+.section-form-button:active {
+    background: #503E33;
+}
 
 /*Footer*/
 .footer {
@@ -336,6 +343,9 @@ html {
 .block-item-img {
     margin-top: 14px;
 }
+.block-item-img:active {
+    opacity: 0.3;
+}
 .footer-block-networks-item:hover {
     background: #669EC0;
 }
@@ -361,6 +371,8 @@ html {
     text-transform: uppercase;
     color: var(--main-color5);
 }
+
+
 
 /*CATALOG PAGE*/
 .infrustructure-form {
@@ -543,6 +555,25 @@ html {
     margin-left: 46px;
     text-transform: uppercase;
 }
+.slider-range {
+    width: 200px;
+}
+#amount {
+    background: transparent;
+
+}
+.ui-slider {
+    width: 316px;
+    height: 2px;
+}
+/*.ui-slider-range {
+    opacity: unset;
+}*/
+.ui-slider-handle { 
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+}
 .menu-line {
     display: flex;
     flex-direction: row;
@@ -565,6 +596,10 @@ html {
 .range-menu-list-item:hover {
     color: var(--main-color4);
     border-bottom: 1px solid var(--main-color2);
+}
+.range-menu-list-item:active {
+    color: #000000;
+    border-bottom: unset;
 }
 .range-menu-list-scroll {
     margin-left: auto;
@@ -606,9 +641,19 @@ html {
     font-size: 21px;
     line-height: 26px;
 }
+.item-information-head:hover  {
+    color: #81B3D2;
+}
+.item-information-head:active {
+     color: #A9A9A9;
+     ;
+}
 .hotel-description {
      margin-left: 29px;
      margin-top: unset;
+}
+.button-text:active {
+    opacity: 0.3;
 }
 .learn-more {
     display: flex;
@@ -622,6 +667,12 @@ html {
     color: var(--main-color1);
     text-transform: uppercase;   
 }
+.learn-more:hover {
+    background: #669EC0;
+}
+.learn-more:active {
+     background: #5496BD;
+}
 .book {
     display: flex;
     align-items: center;
@@ -633,6 +684,12 @@ html {
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;   
+}
+.book:hover {
+    background: #604E43;  
+}
+.book:active {
+    background: #503E33;
 }
 .hotel-buttons {
     display: flex;
