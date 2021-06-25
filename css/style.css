@@ -87,19 +87,7 @@ html {
     background-position: center bottom;
     bottom: 0;
 }
-/*.header-shape {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
-    height: 57px;
-    position: absolute;
-    top: 507px;
-    background-image: url('../img/shape-header.svg');
-    
-    
-}*/
+
 
 
 /*section-promo*/
@@ -138,7 +126,7 @@ html {
 }
 .section-description-block-text {
     width: 400px;
-    height: 256px;
+    /*height: 256px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -269,7 +257,9 @@ html {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    min-height: 291px;
     justify-content: center;
+    position: relative;
 }
 .section-form-head {
     margin-top: 58px;
@@ -307,6 +297,37 @@ html {
 .section-form-button:active {
     background: #503E33;
 }
+/*Form*/
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    width: 575px;
+    max-width: 100%;
+    height: 86px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    width: 586px;
+    height: 356px;
+}
 
 /*Footer*/
 .footer {
@@ -314,6 +335,8 @@ html {
     min-height: 594px;  
     display: flex;
     align-items: flex-end;
+  
+
 }
 .footer-content {
     display: flex;
@@ -402,7 +425,7 @@ html {
     border: 2px solid var(--main-color1);
     font-size: 14px;
     line-height: 21px;
-    color:#FFFFFF;
+    color: var(--main-color1);
 }
 .form-head {
     margin-left: 15px;
@@ -499,29 +522,29 @@ html {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    width: 224px;
+    width: 317px;
     height:36px;
-    border: 2px solid white;
+    border: 2px solid var(--main-color1);
     border-radius: 2px;
 }
 .input-price {
     background: transparent;
     max-width: 55px;
     border: unset;
-    color:rgba(255, 255, 255, 0.9);
+    color: var(--main-color1);
 }
 .input-price-from {
     width: 25px;
     background: transparent;
     border: unset;
-    color: white;
+    color: var(--main-color1);
 }
 .label-form {
     width: 58px;
-    padding-left: 20px;
+    padding-left: 52px;
     font-size: 14px;
     line-height: 21px;
-    color: #FFFFFF;
+    color: var(--main-color1);
     text-transform: uppercase;
 }
 .label-form-to {
@@ -529,9 +552,11 @@ html {
     padding-left: 11px;
     font-size: 14px;
     line-height: 21px;
-    color: #FFFFFF;
+    color: var(--main-color1);
     text-transform: uppercase;
 }
+
+
 
 
 
@@ -617,7 +642,7 @@ html {
     padding-bottom: 30px;
     padding-right: 50px;
     margin-left: unset;
-    border-bottom: 1px solid #E5E5E5;
+    border-bottom: 1px solid var(--main-color3);
 }
 .hotels-item-information {
     display: flex;
@@ -642,7 +667,7 @@ html {
     line-height: 26px;
 }
 .item-information-head:hover  {
-    color: #81B3D2;
+    color: var(--main-color2);
 }
 .item-information-head:active {
      color: #A9A9A9;
@@ -668,7 +693,7 @@ html {
     text-transform: uppercase;   
 }
 .learn-more:hover {
-    background: #669EC0;
+    background: var(--main-color2);
 }
 .learn-more:active {
      background: #5496BD;

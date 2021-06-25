@@ -5,28 +5,7 @@
     <meta charset="utf-8">
     <link rel="icon" href="32.ico">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-  $( function() {
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 500,
-      values: [ 75, 300 ],
-      slide: function( event, ui ) {
-        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-      }
-    });
-    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-  } );
-  </script>
-    
     <title>HTML Academy: Седона</title>
 </head>
 
@@ -93,27 +72,12 @@
                         </ul>
                     </div>
                     <div class="block-living-price">
-                        <h2 class="form-head">Стоимость в сутки:</h2>
-
-                        <!--
+                        <h2 class="form-head">Стоимость в сутки:</h2>            
                             <div class="block-living-price-inputs">
                                <label class="label-form">от<input type="number" value="0" name="from" class="input-price-from"></label>
                                <img src="img/border-svg.svg" alt="border">
                                <label class="label-form-to">до<input type="number" value="3000" name="to" class="input-price"></label>
-                           </div>
-                        -->
-                                   
-                           
-                           <p>
-                            <label for="amount" style="width: 316px;">
-                            <input type="text" id="amount" style="border: 2px solid white; width: 316px; height: 30px; color:white; border-radius: 2px; font-weight:bold;">
-                            </label>
-                            
-                          </p>
-                           
-                          <div id="slider-range"></div>
-                           
-    
+                           </div>   
                         <button type="submit" class="price-button">Показать</button>
                     </div>
                 </form>
