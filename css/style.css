@@ -24,6 +24,11 @@ body {
     --main-color3: #EEEEEE;
     --main-color4: #766357;
     --main-color5: #000000;
+    --main-color6: #669EC0;
+    --main-color7: #5496BD;
+    --main-color8: #604E43;
+    --main-color9: #503E33;
+    --main-color10: #BDBBBC;
 }
 ul {
     list-style: none;
@@ -50,6 +55,7 @@ html {
 }
 .header-navigation-list {
     width: 1200px;
+    padding-left: unset;
     display: flex;
     justify-content: space-around;
     font-size: 14px;
@@ -292,10 +298,10 @@ html {
     text-align: center;
 }
 .section-form-button:hover {
-    background: #604E43;
+    background: var(--main-color8);
 }
 .section-form-button:active {
-    background: #503E33;
+    background: var(--main-color9);
 }
 /*Form*/
 /* Style the buttons that are used to open and close the accordion panel */
@@ -313,21 +319,7 @@ html {
     height: 86px;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-    background-color: #ccc;
-}
 
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-    background-color: gray;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    overflow: hidden;
-    width: 586px;
-    height: 356px;
-}
 
 /*Footer*/
 .footer {
@@ -344,7 +336,7 @@ html {
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--main-color1);
 }
 .footer-block-number {
     display: flex;
@@ -370,10 +362,10 @@ html {
     opacity: 0.3;
 }
 .footer-block-networks-item:hover {
-    background: #669EC0;
+    background: var(--main-color6);
 }
 .footer-block-networks-item:active {
-    background: #5496BD;
+    background: var(--main-color7);
 }
 .footer-block-networks-list {
     display: grid;
@@ -400,12 +392,11 @@ html {
 /*CATALOG PAGE*/
 .infrustructure-form {
     background: url("../img/background-catalog.png") no-repeat;
-    height: 215px;
     display: flex;
     flex-direction: row;
 }
 .block-living-advantages {
-    margin-left: 85px;  
+    margin-left: 73px;  
 }
 .block-living-conditions {
    margin-left: 100px;
@@ -418,7 +409,7 @@ html {
 }
 .price-button {
     margin-top: 40px;
-    margin-left: 55px;
+    margin-left: 95px;
     width: 138px;
     height: 36px;
     background: transparent;
@@ -428,7 +419,6 @@ html {
     color: var(--main-color1);
 }
 .form-head {
-    margin-left: 15px;
     font-size: 16px;
     line-height: 21px;
     font-weight: 700;
@@ -444,9 +434,16 @@ html {
 }
 
 
+a.footer-logo svg path:hover {
+    fill:var(--main-color2);
+}
+a.footer-logo svg path:active {
+    fill: var(--main-color10);
+}
+
+
 /*Checkbox*/
 .label-text {
-    margin-left: 15px;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
@@ -549,7 +546,9 @@ html {
 }
 .label-form-to {
     width: 84px;
-    padding-left: 11px;
+    height: 22px;
+    padding-left: 45px;
+    border-left: 2px solid var(--main-color1);
     font-size: 14px;
     line-height: 21px;
     color: var(--main-color1);
@@ -571,7 +570,7 @@ html {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
-    margin-left: 95px;
+    margin-left: 73px;
 }
 .range-menu-sort {
     font-size: 12px;
@@ -580,25 +579,7 @@ html {
     margin-left: 46px;
     text-transform: uppercase;
 }
-.slider-range {
-    width: 200px;
-}
-#amount {
-    background: transparent;
 
-}
-.ui-slider {
-    width: 316px;
-    height: 2px;
-}
-/*.ui-slider-range {
-    opacity: unset;
-}*/
-.ui-slider-handle { 
-    border-radius: 50%;
-    width: 19px;
-    height: 19px;
-}
 .menu-line {
     display: flex;
     flex-direction: row;
@@ -623,7 +604,7 @@ html {
     border-bottom: 1px solid var(--main-color2);
 }
 .range-menu-list-item:active {
-    color: #000000;
+    color: var(--main-color5);
     border-bottom: unset;
 }
 .range-menu-list-scroll {
@@ -631,7 +612,7 @@ html {
     display: flex;
     flex-direction: row;
     gap: 12px;
-    padding-right: 50px;
+    padding-right: 73px;
 }
 .range-menu-hotels-item {
     max-width: 100%;
@@ -640,7 +621,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 30px;
-    padding-right: 50px;
+    padding-right: 73px;
     margin-left: unset;
     border-bottom: 1px solid var(--main-color3);
 }
@@ -660,6 +641,7 @@ html {
     flex-direction: column;
     gap: 47px;
     margin-top: 29px;
+    
 }
 .item-informaton-head {
     margin-top: unset;
@@ -670,8 +652,9 @@ html {
     color: var(--main-color2);
 }
 .item-information-head:active {
-     color: #A9A9A9;
-     ;
+     color: var(--main-color10);
+     
+     
 }
 .hotel-description {
      margin-left: 29px;
@@ -696,7 +679,7 @@ html {
     background: var(--main-color2);
 }
 .learn-more:active {
-     background: #5496BD;
+     background: var(--main-color7);
 }
 .book {
     display: flex;
@@ -711,10 +694,10 @@ html {
     text-transform: uppercase;   
 }
 .book:hover {
-    background: #604E43;  
+    background: var(--main-color8);  
 }
 .book:active {
-    background: #503E33;
+    background: var(--main-color9);
 }
 .hotel-buttons {
     display: flex;
@@ -730,7 +713,7 @@ html {
 }
 .hotel-img {
     margin-top: 30px;
-    margin-left: 90px;
+    margin-left: 73px;
 }
 .item-range {
     width: 110px;
