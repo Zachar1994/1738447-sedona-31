@@ -15,10 +15,10 @@
             <nav class="header-navigation">
                 <img src="img/logo.svg" width="138" height="70" alt="логотип-хедер" class="header-navigation-logo">
                 <ul class="header-navigation-list">
-                    <li class="header-navigation-list-item"><a href="#">Информация</a></li>
-                    <li class="header-navigation-list-item"><a href="#">Фото и видео</a></li>
-                    <li class="header-navigation-list-item"><a href="#">Карта штата</a></li>
-                    <li class="header-navigation-list-item"><a href="catalog.html">Гостиницы</a></li>
+                    <li class="header-navigation-list-item"><a href="#" class="header-item">Информация</a></li>
+                    <li class="header-navigation-list-item"><a href="#" class="header-item">Фото и видео</a></li>
+                    <li class="header-navigation-list-item"><a href="#" class="header-item">Карта штата</a></li>
+                    <li class="header-navigation-list-item"><a href="catalog.html" class="header-item">Гостиницы</a></li>
                 </ul>
             </nav>
         </header>
@@ -26,7 +26,7 @@
         <main>
             <section class="surface">
                 <div class="header-surface">
-                    <img src="img/Sedona-surface.svg" width="456" height="270" alt="Welcome-surface"
+                    <img src="img/Sedona-surface.svg" width="456" height="330" alt="Welcome-surface"
                         class="header-surface-img"> 
                 </div>
             </section>
@@ -98,15 +98,45 @@
                 <h2 class="section-form-head">заинтересовались?</h2>
                 <p class="section-form-text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие предложения
                     гостиниц в&nbsp;седоне</p>
-                      <button class="section-form-button" type="button"><span class="button-text">Поиск гостиницы в Седоне</span></button>                    
+                      <button class="section-form-button" type="button"><span class="button-text">Поиск гостиницы в Седоне</span></button>  
+                      <div >
+                          <form action="#" method="POST" class="section-form-container">
+                               <label class="section-form-container-name">Дата заезда: <input  name="date" type="date"  class="form-datetime"></label>
+                               <label class="section-form-container-name departure">Дата выезда: <input  name="date" type="date" class="form-datetime"></label>
+                               <div class="amount-of-people">
+                                
+                                     <label class="section-form-name" for="input">Взрослые:</label>
+                                         <div class="amount-of-adults">  
+                                         <button class="quantity-arrow"><img src="img/Rectangle.svg" alt="minus" class="form-minus"></button>
+                                         <input type="number" class="form-amount" id="input">
+                                         <button class="quantity-arrow"> <img src="img/Union.svg" alt="plus"> </button>
+                                         </div>
+                                     
+                                         
+                                    <label class="section-form-name" for="input"> Дети:</label>
+                                            <div class="amount-of-adults">  
+                                            <button class="quantity-arrow"><img src="img/Rectangle.svg" alt="minus" class="form-minus"></button>
+                                            <input type="number" class="form-amount" id="input">
+                                            <button class="quantity-arrow"> <img src="img/Union.svg" alt="plus"> </button>
+                                            </div>
+                                    
+                                </div>
+                               <button typ e="submit" class="section-form-container-button">Найти</button>
+                          </form>
+                        
+                      </div> 
+                      <img src="img/map.jpg" width="1200"  height="495" alt="map"> 
+                      
+
+                                    
             </section>
         </main>
 
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-block-number">
-                    <a href="#visitSEDONA">#visitSEDONA</a>
-                    <a href="tel:+78005558628">+7 800 555-86-28</a>
+                    <a href="#visitSEDONA" class="visit-sedona">#visitSEDONA</a>
+                    <a href="tel:+78005558628" class="footer-number">+7 800 555-86-28</a>
                 </div>
                 <div class="footer-block-networks">
                     <ul class="footer-block-networks-list">

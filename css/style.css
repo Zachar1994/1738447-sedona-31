@@ -57,6 +57,7 @@ html {
     width: 1200px;
     padding-left: unset;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     font-size: 14px;
     line-height: 26px;
@@ -64,9 +65,17 @@ html {
     text-transform: uppercase;
     color: var(--main-color5);
 }
+
 .header-navigation-list-item:nth-child(3) {
     margin-left: 300px;
 }
+.header-item:hover {
+    color: var(--main-color6);
+}
+.header-item:active {
+    color: var(--main-color10);
+}
+
 .header-navigation-logo {
     position: absolute;
     z-index: 1;
@@ -263,7 +272,6 @@ html {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    min-height: 291px;
     justify-content: center;
     position: relative;
 }
@@ -296,6 +304,7 @@ html {
     padding-top: 30px;
     padding-left: 125px;
     text-align: center;
+    cursor: pointer;
 }
 .section-form-button:hover {
     background: var(--main-color8);
@@ -303,28 +312,96 @@ html {
 .section-form-button:active {
     background: var(--main-color9);
 }
-/*Form*/
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
+.section-form-container {
+    width: 586px;
+    height: 395px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--main-color1);
+    box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+    z-index: 3;
+}
+.section-form-container-name {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 55px;
+}
+.departure {
+    margin-top: 35px;
+}
+.section-form-name {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.form-datetime {
+    width: 346px;
+    height: 38px;
+    margin-left: 30px;
+    background: var(--main-color);
     border: none;
-    outline: none;
-    transition: 0.4s;
-    width: 575px;
-    max-width: 100%;
-    height: 86px;
+}
+::-webkit-calendar-picker-indicator {
+    background: url('../img/calendar.svg') no-repeat;
+    height: 23px;
+    padding-right: 9px;
+
+}
+.amount-of-people {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+}
+.form-amount {
+    width: 35px;
+    height: 38px;
+    background: transparent;
+    border: none;
+}
+.section-form-container-button {
+    width: 458px;
+    height: 58px;
+    margin-top: 53px;
+    background: var(--main-color2);
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-color1);
+    border: none;
+}
+.amount-of-adults {
+    width: 114px;
+    height: 38px;
+    background: var(--main-color);
+    border: none;
+
+}
+.quantity-arrow {
+    border: none;
+}
+.form-minus {
+    padding-bottom: 4px;
 }
 
 
 
 /*Footer*/
 .footer {
-    background: url("../img/map.jpg") no-repeat;
-    min-height: 594px;  
+    /*background: url("../img/map.jpg") no-repeat;*/
+    /*min-height: 594px;*/  
     display: flex;
     align-items: flex-end;
   
@@ -386,6 +463,18 @@ html {
     text-transform: uppercase;
     color: var(--main-color5);
 }
+.visit-sedona:hover {
+   color: var(--main-color6);
+}
+.visit-sedona:active {
+    color: var(--main-color10);
+}
+.footer-number:hover {
+    color: var(--main-color6);
+}
+.footer-number:active {
+    color: var(--main-color10);
+}
 
 
 
@@ -434,10 +523,10 @@ html {
 }
 
 
-a.footer-logo svg path:hover {
+a.footer-logo:hover svg path {
     fill:var(--main-color2);
 }
-a.footer-logo svg path:active {
+a.footer-logo:active svg path {
     fill: var(--main-color10);
 }
 
