@@ -115,7 +115,8 @@ html {
     min-height: 216px;
 }
 .section-promo-head {
-    margin-top: 41px;
+    margin-top: 41.5px;
+    margin-bottom: unset;
     text-align: center;
     min-height: 80px;
     font-size: 21px;
@@ -124,9 +125,12 @@ html {
     text-transform: uppercase;
     color: var(--main-color5);
     max-width: 460px;
+    min-height: 80px;
 }
 .section-promo-text {
-    margin-top: 16px;
+    margin-top: 16.5px;
+    max-width: 520px;
+    margin-bottom: 51px;
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
@@ -137,7 +141,7 @@ html {
 .section-description-block {
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
+    
 }
 .section-description-block-text {
     width: 400px;
@@ -162,6 +166,12 @@ html {
     margin-top: 47px;
     text-transform: uppercase;
 }
+.real-city {
+    width: 122px;
+}
+.devils-bridge {
+    width: 150px;
+}
 .block-number {
     font-size: 14px;
     line-height: 21px;
@@ -178,6 +188,8 @@ html {
     text-transform: uppercase;
 }
 .section-description-list {
+    margin-top: unset;
+    margin-bottom: unset;
     padding-left: 73px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -185,7 +197,7 @@ html {
 }
 .section-description-list-item {
     width: 290px;
-    margin-top: 64px;
+    margin-top: 63.5px;
     text-align: center;
 }
 .item-accomodation {
@@ -194,12 +206,12 @@ html {
     max-width: 254px;
 }
 .item-food {
-    background: url("../img/icon-2.svg") no-repeat;
+    background: url("../img/icon-3.svg") no-repeat;
     background-position: top center; 
     max-width: 297px;
 }
 .item-souvenir {
-    background: url("../img/icon-3.svg") no-repeat;
+    background: url("../img/icon-2.svg") no-repeat;
     background-position: top center;
     max-width: 269px;
 }
@@ -222,8 +234,8 @@ html {
 .section-description-list-advantage {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 60px;
-    min-height: 330px;
+    padding-left: 96px;
+    min-height: 256px;
     background: var(--main-color3);
     margin-top: 0;
 }
@@ -231,7 +243,9 @@ html {
     display: flex;
     flex-direction: column;
     width: 254px;
+    max-width: 100%;
     margin-top: 47px;
+    margin-bottom: 54px;
     text-align: center;
     align-items: center;
 }
@@ -245,6 +259,7 @@ html {
     max-width: 246px;
 }
 .item-advantage-head {
+    margin-top: unset;
     width: 100px;
     font-size: 21px;
     line-height: 21px;
@@ -273,7 +288,7 @@ html {
     text-align: center;
     align-items: center;
     justify-content: center;
-    position: relative;
+    /*position: relative;*/
 }
 .section-form-head {
     margin-top: 58px;
@@ -312,6 +327,9 @@ html {
 .section-form-button:active {
     background: var(--main-color9);
 }
+.form-map {
+    max-width: 100%;
+}
 .section-form-container {
     width: 586px;
     height: 395px;
@@ -320,7 +338,9 @@ html {
     align-items: center;
     background: var(--main-color1);
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
-    z-index: 3;
+    position: absolute;
+    top: 2220px;
+    z-index: 2;
 }
 .section-form-container-name {
     font-size: 14px;
@@ -463,6 +483,7 @@ html {
     text-transform: uppercase;
     color: var(--main-color5);
 }
+
 .visit-sedona:hover {
    color: var(--main-color6);
 }
