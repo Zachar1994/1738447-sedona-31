@@ -238,6 +238,7 @@ html {
     min-height: 256px;
     background: var(--main-color3);
     margin-top: 0;
+    margin-bottom: unset;
 }
 .section-list-item-advantage {
     display: flex;
@@ -288,7 +289,7 @@ html {
     text-align: center;
     align-items: center;
     justify-content: center;
-    /*position: relative;*/
+    position: relative;
 }
 .section-form-head {
     margin-top: 58px;
@@ -297,6 +298,7 @@ html {
     font-weight: 700;
     text-transform: uppercase;
     color: var(--main-color5);
+   
 }
 .section-form-text {
     max-width: 435px;
@@ -339,8 +341,8 @@ html {
     background: var(--main-color1);
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
     position: absolute;
-    top: 2220px;
-    z-index: 2;
+    top: 293px;
+    z-index: 12;
 }
 .section-form-container-name {
     font-size: 14px;
