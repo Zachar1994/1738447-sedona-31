@@ -27,13 +27,13 @@
         <main>
             <section class="surface">
                 <div class="header-surface">
-                    <img src="img/Sedona-surface.svg" width="456" height="330" alt="Welcome-surface"
+                    <img src="img/Sedona-surface.svg" width="480" height="350" alt="Welcome-surface"
                         class="header-surface-img">
                 </div>
             </section>
             <section class="section-promo">
                 <h1 class="section-promo-head">
-                    Седона-небольшой городок в&nbsp;Аризоне, заслуживающий Большего!
+                    Седона  -  небольшой городок в&nbsp;Аризоне, заслуживающий Большего
                 </h1>
                 <p class="section-promo-text">
                     Рассмотрим 5&nbsp;причин по&nbsp;которым седона лучше чем Гранд Каньон!
@@ -48,26 +48,26 @@
                             течёт своя жизнь</p>
                     </div>
                     <div class="section-description-block-img">
-                        <img src="img/view-1.jpg" alt="real-city" class="section-img">
+                        <img src="img/view-2.jpg" alt="real-city" class="section-img">
                     </div>
                 </div>
                 <ul class="section-description-list">
                     <li class="section-description-list-item item-accomodation">
                         <h2 class="list-item-head">жилье</h2>
-                        <p class="list-item-text">Реккомендуем пожить в&nbsp;мотеле, все как в&nbsp;кино!</p>
+                        <p class="list-item-text">Рекомендуем пожить в настоящем&nbsp;мотеле, все как в&nbsp;кино!</p>
                     </li>
                     <li class="section-description-list-item item-food">
                         <h2 class="list-item-head">еда</h2>
                         <p class="list-item-text">Рекомендуем захватить настоящий бургер,вы не&nbsp;разочаруетесь!</p>
                     </li>
                     <li class="section-description-list-item item-souvenir">
-                        <h2 class="list-item-head">сувениры</h2>
+                        <h2 class="list-item-head head-souvenir">сувениры</h2>
                         <p class="list-item-text">не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
                     </li>
                 </ul>
                 <div class="section-description-block">
                     <div class="section-description-block-img">
-                        <img src="img/view-2.jpg" alt="devil-place" class="section-img">
+                        <img src="img/view-1.jpg" alt="devil-place" class="section-img">
                     </div>
                     <div class="section-description-block-text">
                         <h2 class="block-head devils-bridge">Там есть мост дьявола</h2>
@@ -100,7 +100,11 @@
                 <p class="section-form-text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие
                     предложения
                     гостиниц в&nbsp;седоне</p>
-                <button class="section-form-button" type="button"><span class="button-text">Поиск гостиницы в
+               
+ <div class="form-button">
+
+
+          <button class="section-form-button" type="button"><span class="button-text">Поиск гостиницы в
                         Седоне</span></button>
                 <div class="section-form-container">
                     <form action="#" method="POST">
@@ -110,37 +114,48 @@
                                 class="form-datetime"></label>
                         <div class="amount-of-people">
 
-                            <label class="section-form-name">Взрослые:</label>
+                            <label class="section-form-name" for="#amount-adults">Взрослые:</label>
                             <div class="amount-of-adults">
-                                <button class="quantity-arrow" type="button"><img src="img/Rectangle.svg" alt="minus"
-                                        class="form-minus"></button>
-                                <input type="number" class="form-amount">
-                                <button class="quantity-arrow" type="button"> <img src="img/Union.svg" alt="plus">
+                                <button class="quantity-arrow" type="button">
+                                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="12" height="3" fill="#A9A9A9"/>
+                                    </svg>       
+                                </button>
+                                <input type="number" class="form-amount" id="#amount-adults">
+                                <button class="quantity-arrow" type="button"> 
+                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+                                     </svg>      
                                 </button>
                             </div>
 
 
-                            <label class="section-form-name"> Дети:</label>
+                            <label class="section-form-name" for="#amount-children"> Дети:</label>
                             <div class="amount-of-adults">
-                                <button class="quantity-arrow" type="button"><img src="img/Rectangle.svg" alt="minus"
-                                        class="form-minus"></button>
-                                <input type="number" class="form-amount">
-                                <button class="quantity-arrow" type="button"><img src="img/Union.svg" alt="plus">
+                                <button class="quantity-arrow" type="button">
+                                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="12" height="3" fill="#A9A9A9"/>
+                                    </svg>  
+                                </button>
+                                <input type="number" class="form-amount" id="#amount-children">
+                                <button class="quantity-arrow" type="button">
+                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+                                     </svg>
                                 </button>
                             </div>
+
 
                         </div>
-                        <button type="submit" class="section-form-container-button">Найти</button>
+                        <button type="submit" class="section-form-container-button"><span class="search">Найти</span></button>
                     </form>
-                </div>
-                <img src="img/map.jpg" width="1200" height="495" alt="map" class="form-map">
-
-
-
+                  </div>
+               </div>
             </section>
         </main>
-
+     
         <footer class="footer">
+ <img src="img/map.jpg" width="1200" height="495" alt="map" class="form-map">
             <div class="footer-content">
                 <div class="footer-block-number">
                     <a href="#visitSEDONA" class="visit-sedona">#visitSEDONA</a>
