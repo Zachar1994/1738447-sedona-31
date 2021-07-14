@@ -57,7 +57,7 @@ html {
     width: 1200px;
     padding-left: unset;
     display: flex;
-    flex-direction: row;
+
     justify-content: space-around;
     font-size: 14px;
     line-height: 26px;
@@ -65,12 +65,23 @@ html {
     text-transform: uppercase;
     color: var(--main-color5);
 }
+ 
+.header-navigation-list-item:nth-child(1) {
+    margin-left: 72px;
+}
 .header-navigation-list-item:nth-child(2) {
-    margin-right: 10px;
+    margin-left: 134px;
 }
 .header-navigation-list-item:nth-child(3) {
-    margin-left: 265px;
+    margin-left: auto;
+    margin-right: 147px;
 }
+.header-navigation-list-item:nth-child(4) {
+    margin-right: 72px;
+}
+
+
+
 .header-item:hover {
     color: var(--main-color6);
 }
@@ -119,14 +130,14 @@ html {
 .section-promo-head {
     margin-top: 41.5px;
     margin-bottom: unset;
-    text-align: center;
-    min-height: 80px;
+    display: block;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--main-color5);
-    max-width: 460px;
+    width: 470px;
+    
     min-height: 80px;
 }
 .section-promo-text {
@@ -186,12 +197,14 @@ html {
 .block-text {
     margin-top: 10px;
     max-width: 302px;
+    height: 43px;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
     color: var(--main-color1);
     text-transform: uppercase;
 }
+
 .section-description-list {
     margin-top: unset;
     margin-bottom: unset;
@@ -217,7 +230,7 @@ html {
     background: url("../img/icon-3.svg") no-repeat;
     background-position: top center; 
     margin-top: 61px;
-    max-width: 297px;
+    width: 297px;
 }
 .item-souvenir {
     background: url("../img/icon-2.svg") no-repeat;
@@ -225,7 +238,7 @@ html {
     margin-left: auto;
     margin-top: 56px;
     margin-right: 65px;
-    max-width: 269px;
+    width: 269px;
     height: 100%;
 }
 .list-item-head {
@@ -238,6 +251,7 @@ html {
 }
 .list-item-text {
     margin-bottom: 82px;
+    display: block;
     margin-top: 25px;
     font-size: 14px;
     line-height: 21px;
@@ -245,7 +259,12 @@ html {
     text-transform: uppercase;
     color: var(--main-color5);
 }
-
+.burger {
+    margin-top: 27px;
+}
+.head-souvenir {
+    margin-top: 24px;
+}
 .section-description-list-advantage {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -258,17 +277,19 @@ html {
 .section-list-item-advantage {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    align-items: center;
     max-width: 100%;
     margin-top: 47px;
     margin-bottom: 54px;
-    text-align: center;
-    align-items: center;
+    
 }
 .little-area {
     max-width: 207px;
 }
 .beautiful-road {
     max-width: 258px;
+    margin-left: 10px;
 }
 .little-tourist {
     margin-left: auto;
@@ -277,6 +298,7 @@ html {
 }
 .item-advantage-head {
     margin-top: unset;
+    text-align: center;
     width: 100px;
     font-size: 21px;
     line-height: 21px;
@@ -289,6 +311,15 @@ html {
     line-height: 21px;
     font-weight: 400;
     color: var(--main-color5);
+}
+.three {
+    margin-top: 10px;
+}
+.four {
+    margin-top: 10px;
+}
+.five {
+    margin-top: 9px;
 }
 .item-advantage-text {
     font-size: 14px;
@@ -323,21 +354,24 @@ html {
     font-weight: 400;
     text-transform: uppercase;
     color: var(--main-color5);
+    margin-top: 10px;
 }
 .section-form-button {
     display: flex;
-    width: 586px;
+    width: 568px;
     height: 86px;
-    margin-top: 24px;
+    margin-top: 26px;
     background: var(--main-color4);
     color: var(--main-color1) ;
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
-    padding-top: 30px;
-    padding-left: 125px;
     text-align: center;
     cursor: pointer;
+}
+.search-sedona {
+    margin-left: 130px;
+    margin-top: 28px;
 }
 .section-form-button:hover {
     background: var(--main-color8);
@@ -351,7 +385,7 @@ html {
     position: relative;
 }
 .section-form-container {
-    width: 586px;
+    width: 568px;
     height: 395px;
     display: flex;
     flex-direction: column;
@@ -395,8 +429,8 @@ html {
     background: url('../img/calendar.svg') no-repeat;
     height: 23px;
     padding-right: 9px;
-
 }
+
 .form-button {
     position: relative;
 }
@@ -460,7 +494,7 @@ html {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 125px;
+    height: 120px;
     max-width: 1200px;
     background: rgba(255, 255, 255, 0.9);;
 }
@@ -468,7 +502,8 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 136px;
+    margin-left: 150px;
+    margin-top: unset;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -476,7 +511,7 @@ html {
     color: var(--main-color5);
 }
 .footer-block-networks {
-    margin-left: 189px;
+    margin-left: 168px;
 }
 .footer-block-networks-item {
     width: 46px;
@@ -527,6 +562,9 @@ html {
 .visit-sedona:active {
     color: var(--main-color10);
 }
+.footer-number {
+    margin-bottom: 15px;
+}
 .footer-number:hover {
     color: var(--main-color6);
 }
@@ -538,7 +576,7 @@ html {
 
 /*CATALOG PAGE*/
 .infrustructure-form {
-    background: url("../img/background-catalog.png") no-repeat;
+    background: url("../img/background-catalog.jpg") no-repeat;
     min-height: 217px;
     display: flex;
     flex-direction: row;
@@ -556,11 +594,12 @@ html {
     padding-right: 73px;
 }
 .price-button {
-    margin-top: 24.9px;
-    margin-left: 95px;
+    margin-top: 22.5px;
+    margin-left: 90px;
     width: 138px;
     height: 36px;
     background: transparent;
+    text-transform: uppercase;
     border: 2px solid var(--main-color1);
     font-size: 14px;
     line-height: 21px;
@@ -578,7 +617,7 @@ html {
     margin-top: 24px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;  
-    gap: 15px;
+    gap: 16px;
     padding-left: unset;
 }
 
@@ -669,7 +708,7 @@ a.footer-logo:active svg path {
     align-items: center;
     justify-content: space-around;
     width: 317px;
-    height:36px;
+    height:34px;
     border: 2px solid var(--main-color1);
     border-radius: 2px;
 }
@@ -710,13 +749,21 @@ a.footer-logo:active svg path {
     background: url('../img/progress.svg')no-repeat center;
     display: flex;
     flex-direction: row;
-    gap: 233px;
+    gap: 228px;
+    position: relative;
 }
 .cicrcle-button {
-    border: unset;
-    border-radius: 50%;
-    width: 21px;
-    height: 21px;
+   border-radius: 50%;
+   border: none;
+   width: 19px;
+   height: 21px;
+   z-index: 2;
+}
+
+.rectangle {
+    position: absolute;
+    z-index: 0;
+    bottom: 6.5px;
 }
 
 
@@ -810,12 +857,18 @@ a.footer-logo:active svg path {
     
 }
 .item-informaton-head {
-    margin-top: unset;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
     text-transform: uppercase;
-   
+}
+.item-head {
+    margin-top: 28px;
+    margin-bottom: unset;
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
 }
 .item-information-head:hover  {
     color: var(--main-color2);
@@ -827,6 +880,7 @@ a.footer-logo:active svg path {
 }
 .hotel-description {
      margin-left: 29px;
+    
      margin-top: unset;
      display: flex;
      flex-direction: column;
@@ -872,11 +926,17 @@ a.footer-logo:active svg path {
 }
 .hotel-buttons {
     display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.hotel-buttons-price {
+    display: flex;
     flex-direction: row;
     gap: 6px;
 }
 .hotel-price {
-    margin-top: unset;
+    margin-top: 8px;
+    margin-bottom: 13.3px;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
@@ -890,13 +950,17 @@ a.footer-logo:active svg path {
     width: 110px;
     height: 27px;
     background: var(--main-color);
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
     display: flex;
     align-items: center;
     margin-top: unset;
     justify-content: center;
+    text-transform: uppercase;
 }
 .stars-list {
-    margin-top: 15px;
+    margin-top: 17px;
 }
 .footer-content-catalog { 
     display: flex;
@@ -930,5 +994,6 @@ a.footer-logo:active svg path {
 .search:active {
     opacity: 0.3;
 }
+
 
 

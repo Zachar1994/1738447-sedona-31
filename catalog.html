@@ -25,7 +25,7 @@
         </header>
         <main>
             <section>
-                <form action="#" method="GET" name="infrustructure" class="infrustructure-form">
+                <form action="https://echo.htmlacademy.ru/" method="POST" name="infrustructure" class="infrustructure-form">
                     <div class="block-living-advantages">
                         <h2 class="form-head">Инфраструктура:</h2>
                         <ul class="form-list">
@@ -55,25 +55,25 @@
                             <li>
                                 <label class="form-list-item">
                                     <input type="checkbox" class="checked-header" name="hostinitsa" checked />
-                                    <span class="label-text">Гостиница</span>
+                                    <span class="label-text guest-house">Гостиница</span>
                                 </label>
                             </li>
                             <li>
                                 <label class="form-list-item">
                                     <input type="checkbox" class="checked-header" name="hotel" checked />
-                                    <span class="label-text">Отель</span>
+                                    <span class="label-text motel">Мотель</span>
                                 </label>
                             </li>
                             <li>
                                 <label class="form-list-item">
                                     <input type="checkbox" class="checked-header" name="apartment" checked />
-                                    <span class="label-text">Апартаменты</span>
+                                    <span class="label-text apartment">Апартаменты</span>
                                 </label>
                             </li>
                         </ul>
                     </div>
                     <div class="block-living-price">
-                        <h2 class="form-head">Стоимость в сутки:</h2>
+                        <h2 class="form-head">Стоимость в сутки, ₽:</h2>
                         <div class="block-living-price-inputs">
                             <label class="label-form">от<input type="number" value="0" name="from"
                                     class="input-price-from"></label>
@@ -84,9 +84,9 @@
 
 
                        <div class="slider">
+                           <div class="rectangle"> <img src="img/Rectangle-2.svg" alt="progress"></div>
                              <button class="cicrcle-button"></button>
-                             
-                             <button class="cicrcle-button"></button>
+                             <button class="cicrcle-button second"></button>
                          </div>
 
                         <button type="submit" class="price-button">Показать</button>
@@ -95,7 +95,7 @@
             </section>
             <section class="range-of-hotels">
                 <div class="range-menu">
-                    <h1 class="range-menu-head">Найдено:3</h1>
+                    <h1 class="range-menu-head">Найдено: 3</h1>
                     <h3 class="range-menu-sort">Сортировка:</h3>
                     <ul class="range-menu-list">
                         <li><a href="#" class="range-menu-list-item">По цене</a></li>
@@ -111,14 +111,27 @@
                     <li class="range-menu-hotels-item">
                         <div class="hotels-item-information">
                             <img src="img/hotel-1.jpg" width="135" height="90" alt="hotel1" class="hotel-img">
+                           
                             <div class="hotel-description">
-                                <h2><a href="#" class="item-information-head">AMARA RESORT & SPA</a></h2>
-                                <h3 class="hotel-price">Гостиница от 4000р</h3>
-                                  <div class="hotel-buttons">
-                                      <a href="#" class="learn-more"><span class="button-text">Подробнее</span></a>
+                                <h3 class="item-head"><a href="#" class="item-information-head">Amara Resort & Spa</a></h3>
+                                <div class="hotel-buttons-price">
+                                    <div class="hotel-buttons">
+                                       <p class="hotel-price">Гостиница</p> 
+                                       <a href="#" class="learn-more"><span class="button-text">Подробнее</span></a>
+                                   </div>
+                                  
+
+                                   <div class="hotel-buttons">
+                                      <p class="hotel-price">от 4000 ₽</p>
                                       <a href="#" class="book"><span class="button-text">Забронировать</span></a>
-                                  </div>
+                                    </div>
+                                </div>
+                                   
                             </div>
+
+
+
+
                         </div>
                         <div class="hotels-item-range">
                             <div class="stars-list">
@@ -134,12 +147,21 @@
                         <div class="hotels-item-information">
                             <img src="img/hotel-2.jpg" width="135" height="90" alt="hotel2" class="hotel-img">
                             <div class="hotel-description">
-                                <h2><a href="#" class="item-information-head">Desert Quail Inn</a></h2>
-                                <p class="hotel-price">Мотель от 3000р</p>
-                                <div class="hotel-buttons">
-                                    <a href="#" class="learn-more"><span class="button-text">Подробнее</span></a>
-                                    <a href="#" class="book"><span class="button-text">Забронировать</span></a>
+                                <h3 class="item-head"><a href="#" class="item-information-head">Desert Quail Inn</a></h3>
+        
+                                <div class="hotel-buttons-price">
+                                    <div class="hotel-buttons">
+                                       <p class="hotel-price">Мотель</p> 
+                                       <a href="#" class="learn-more"><span class="button-text">Подробнее</span></a>
+                                   </div>
+                                  
+
+                                   <div class="hotel-buttons">
+                                      <p class="hotel-price">от 3000 ₽</p>
+                                      <a href="#" class="book"><span class="button-text">Забронировать</span></a>
+                                    </div>
                                 </div>
+                                   
                             </div>
                         </div>
                         <div class="hotels-item-range">
@@ -154,16 +176,32 @@
                     <li class="range-menu-hotels-item">
                         <div class="hotels-item-information">
                             <img src="img/hotel-3.jpg" width="135" height="90" alt="hotel3" class="hotel-img">
-                            <div class="hotel-description">
-                                <h2><a href="#" class="item-information-head">Villas at Poco Diablo</a></h2>
-                                <p class="hotel-price">Апартаменты от 2000р</p>
-                                <div class="hotel-buttons">
-                                    <a href="#" class="learn-more"><span
-                                            class="button-text">Подробнее</span></a>
-                                    <a href="#" class="book"><span
-                                            class="button-text">Забронировать</span></a>
+                           
+                                
+                                
+
+                                <div class="hotel-description">
+                                    <h3 class="item-head"><a href="#" class="item-information-head">Villas at Poco Diablo</a></h3>
+                                    <div class="hotel-buttons-price">
+                                        <div class="hotel-buttons">
+                                           <p class="hotel-price">Апартаменты</p> 
+                                           <a href="#" class="learn-more"><span class="button-text">Подробнее</span></a>
+                                       </div>
+                                      
+    
+                                       <div class="hotel-buttons">
+                                          <p class="hotel-price">от 2000 ₽</p>
+                                          <a href="#" class="book"><span class="button-text">Забронировать</span></a>
+                                        </div>
+                                    </div>
+                                       
                                 </div>
-                            </div>
+
+
+
+
+
+                           
                         </div>
                         <div class="hotels-item-range">
                             <div class="stars-list">
