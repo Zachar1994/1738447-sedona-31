@@ -375,6 +375,7 @@ html {
     line-height: 26px;
     text-transform: uppercase;
     text-align: center;
+    cursor: pointer;
 }
 .search-sedona {
     margin-left: 130px;
