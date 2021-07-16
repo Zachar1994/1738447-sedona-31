@@ -16,6 +16,7 @@
 
 body {
     margin: 0 auto;
+    background: var(--main-color11);
 }
 :root {
     --main-color: #F2F2F2;
@@ -29,6 +30,7 @@ body {
     --main-color8: #604E43;
     --main-color9: #503E33;
     --main-color10: #BDBBBC;
+    --main-color11:  #f7f7f7;
 }
 ul {
     list-style: none;
@@ -44,6 +46,7 @@ html {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    box-shadow: 0px 0px 10px 10px var(--main-color3);
     
 }
 /*HEADER*/
@@ -52,6 +55,7 @@ html {
     justify-content: center;
     position: relative;
     color: var(--main-color);
+    background: var(--main-color1);
 }
 .header-navigation-list {
     width: 1200px;
@@ -76,10 +80,10 @@ html {
     margin-left: auto;
     margin-right: 147px;
 }
+
 .header-navigation-list-item:nth-child(4) {
     margin-right: 72px;
 }
-
 
 
 .header-item:hover {
@@ -126,6 +130,7 @@ html {
     flex-direction: column;   
     text-align: center;
     min-height: 216px;
+    background: var(--main-color1);
 }
 .section-promo-head {
     margin-top: 41.5px;
@@ -213,6 +218,7 @@ html {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     gap: 20px;
+    background: var(--main-color1);
 }
 
 
@@ -327,6 +333,7 @@ html {
     font-weight: 400;
     text-transform: uppercase;
     color: var(--main-color5);
+    margin-top: 11px;
 }
 
 /*section_form*/
@@ -337,6 +344,7 @@ html {
     align-items: center;
     justify-content: center;
     position: relative;
+    background: var(--main-color1);
 }
 .section-form-head {
     margin-top: 58px;
@@ -405,6 +413,7 @@ html {
     flex-direction: row;
     align-items: center;
     margin-top: 55px;
+    position: relative;
 }
 .departure {
     margin-top: 35px;
@@ -425,11 +434,7 @@ html {
     background: var(--main-color);
     border: none;
 }
-::-webkit-calendar-picker-indicator {
-    background: url('../img/calendar.svg') no-repeat;
-    height: 23px;
-    padding-right: 9px;
-}
+
 
 .form-button {
     position: relative;
@@ -743,13 +748,13 @@ a.footer-logo:active svg path {
     text-transform: uppercase;
 }
 .slider {
-    margin-top: 11px;
+    margin-top: 10px;
     width: 316px;
     height: 21px;
     background: url('../img/progress.svg')no-repeat center;
     display: flex;
     flex-direction: row;
-    gap: 228px;
+    gap: 231px;
     position: relative;
 }
 .cicrcle-button {
@@ -759,6 +764,7 @@ a.footer-logo:active svg path {
    height: 21px;
    z-index: 2;
 }
+
 
 .rectangle {
     position: absolute;
@@ -996,4 +1002,35 @@ a.footer-logo:active svg path {
 }
 
 
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input::-webkit-calendar-picker-indicator {
+    display: none;
+}
 
+.button-calendar {
+    border: none;
+    background: none;
+    position: absolute;
+    z-index: 3;
+    right: 10px;
+    top: 60px;
+   
+}
+.form-date-calendar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.button-departure {
+    top: 40px;
+}
+.food {
+    margin-top: 20px;
+    padding-right: 4px;
+}

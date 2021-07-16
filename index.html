@@ -15,7 +15,7 @@
             <nav class="header-navigation">
                 <img src="img/logo.svg" width="138" height="70" alt="логотип-хедер" class="header-navigation-logo">
                 <ul class="header-navigation-list">
-                    <li class="header-navigation-list-item"><a href="#" class="header-item">Информация</a></li>
+                    <li class="header-navigation-list-item"><a href="index.html" class="header-item">Информация</a></li>
                     <li class="header-navigation-list-item"><a href="#" class="header-item">Фото и видео</a></li>
                     <li class="header-navigation-list-item"><a href="#" class="header-item">Карта штата</a></li>
                     <li class="header-navigation-list-item"><a href="catalog.html" class="header-item">Гостиницы</a>
@@ -57,7 +57,7 @@
                         <p class="list-item-text">Рекомендуем пожить в настоящем <br>&nbsp;мотеле, все как в&nbsp;кино!</p>
                     </li>
                     <li class="section-description-list-item item-food">
-                        <h2 class="list-item-head">еда</h2>
+                        <h2 class="list-item-head food">еда</h2>
                         <p class="list-item-text burger">Всегда заказывайте фирменный бургер, <br>вы не&nbsp;разочаруетесь!</p>
                     </li>
                     <li class="section-description-list-item item-souvenir">
@@ -104,14 +104,26 @@
  <div class="form-button">
 
 
-          <button class="section-form-button" type="button"><span class="button-text search-sedona">Поиск гостиницы в
-                        Седоне</span></button>
+           <button class="section-form-button" type="button">
+               <span class="button-text search-sedona">Поиск гостиницы Седоне</span>
+            </button>
                 <div class="section-form-container">
                     <form action="https://echo.htmlacademy.ru/" method="POST">
-                        <label class="section-form-container-name">Дата заезда: <input name="date" type="date"
-                                class="form-datetime"></label>
-                        <label class="section-form-container-name departure">Дата выезда: <input name="date" type="date"
-                                class="form-datetime"></label>
+                        <div class="form-date-calendar">
+                             <label class="section-form-container-name">
+                              Дата заезда: <input name="date" type="date" class="form-datetime">
+                             </label>
+                             <button class="button-calendar"><img src="img/calendar.svg" alt="calendar" class="calendar"></button>
+                        </div>
+                        <div class="form-date-calendar">
+                            <label class="section-form-container-name departure">
+                            Дата выезда: <input name="date" type="date" class="form-datetime">
+                            </label>
+                            <button class="button-calendar button-departure"><img src="img/calendar.svg" alt="calendar" class="calendar"></button>
+                        </div>
+                           
+
+
                         <div class="amount-of-people">
 
                             <label class="section-form-name" for="#amount-adults">Взрослые:</label>
@@ -121,7 +133,7 @@
                                         <rect width="12" height="3" fill="#A9A9A9"/>
                                     </svg>       
                                 </button>
-                                <input name="amount" type="number" class="form-amount" id="#amount-adults">
+                                <input type="number" class="form-amount" id="#amount-adults">
                                 <button class="quantity-arrow" type="button"> 
                                     <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
@@ -136,7 +148,7 @@
                                         <rect width="12" height="3" fill="#A9A9A9"/>
                                     </svg>  
                                 </button>
-                                <input   name="amount"   type="number" class="form-amount" id="#amount-children">
+                                <input  type="number" class="form-amount" id="#amount-children">
                                 <button class="quantity-arrow" type="button">
                                     <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
